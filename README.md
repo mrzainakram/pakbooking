@@ -396,10 +396,12 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 Support
 
-- **📧 Email**: support@pakbooking.com
-- **🐛 Issues**: [GitHub Issues](https://github.com/yourusername/pakbooking/issues)
-- **💬 Discussions**: [GitHub Discussions](https://github.com/yourusername/pakbooking/discussions)
-- **📚 Documentation**: [Project Wiki](https://github.com/yourusername/pakbooking/wiki)
+- **📧 Email**: mrzainakram01@gmail.com
+- **📱 Phone**: +92 304 6164257
+- **🔗 LinkedIn**: [linkedin.com/in/mrzainakram](https://www.linkedin.com/in/mrzainakram)
+- **🐛 Issues**: [GitHub Issues](https://github.com/mrzainakram/pakbooking/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/mrzainakram/pakbooking/discussions)
+- **📚 Documentation**: [Project Wiki](https://github.com/mrzainakram/pakbooking/wiki)
 
 ---
 

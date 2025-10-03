@@ -738,6 +738,8 @@ python manage.py test --coverage
 ---
 
 **For support and questions, please contact:**
-- **Email**: api-support@pakbooking.com
-- **GitHub Issues**: [Repository Issues]
-- **Documentation**: [API Documentation]
+- **📧 Email**: mrzainakram01@gmail.com
+- **📱 Phone**: +92 304 6164257
+- **🔗 LinkedIn**: [linkedin.com/in/mrzainakram](https://www.linkedin.com/in/mrzainakram)
+- **🐛 GitHub Issues**: [GitHub Issues](https://github.com/mrzainakram/pakbooking/issues)
+- **📚 Documentation**: [API Documentation](https://github.com/mrzainakram/pakbooking/wiki)

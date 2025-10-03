@@ -308,6 +308,15 @@ git push -u origin main
 - **🌙 Theme System**: Dark/Light mode
 - **📱 Progressive Web App**: Mobile-optimized experience
 
+## 📞 Support
+
+- **📧 Email**: mrzainakram01@gmail.com
+- **📱 Phone**: +92 304 6164257
+- **🔗 LinkedIn**: [linkedin.com/in/mrzainakram](https://www.linkedin.com/in/mrzainakram)
+- **🐛 Issues**: [GitHub Issues](https://github.com/mrzainakram/pakbooking/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/mrzainakram/pakbooking/discussions)
+- **📚 Documentation**: [Project Wiki](https://github.com/mrzainakram/pakbooking/wiki)
+
 ---
 
 **🎉 PakBooking is ready for production deployment!**

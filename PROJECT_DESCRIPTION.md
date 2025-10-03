@@ -316,6 +316,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Tailwind CSS**: For the utility-first CSS framework
 - **Pakistan Tourism**: For inspiration and local market insights
 
+## 📞 Support
+
+- **📧 Email**: mrzainakram01@gmail.com
+- **📱 Phone**: +92 304 6164257
+- **🔗 LinkedIn**: [linkedin.com/in/mrzainakram](https://www.linkedin.com/in/mrzainakram)
+- **🐛 Issues**: [GitHub Issues](https://github.com/mrzainakram/pakbooking/issues)
+- **💬 Discussions**: [GitHub Discussions](https://github.com/mrzainakram/pakbooking/discussions)
+- **📚 Documentation**: [Project Wiki](https://github.com/mrzainakram/pakbooking/wiki)
+
 ---
 
 **Built with ❤️ for Pakistan's hospitality industry**
