@@ -7,7 +7,7 @@ from listings.serializers import PropertySerializer
 
 class BookingSerializer(serializers.ModelSerializer):
     property_details = PropertySerializer(source='property', read_only=True)
-    nights = serializers.ReadOnlyField(source='get_nights')
+    nights = serializers.SerializerMethodField()
     
     class Meta:
         model = Booking
@@ -62,4 +62,10 @@ class BookingSerializer(serializers.ModelSerializer):
         # Set default contact email to user's email if not provided
         if not validated_data.get('contact_email'):
             validated_data['contact_email'] = self.context['request'].user.email
-        return super().create(validated_data) 
+        return super().create(validated_data)
+    
+    def get_nights(self, obj) -> int:
+        """Calculate number of nights"""
+        nights = (obj.check_out - obj.check_in).days
+        # For same-day bookings, charge for 1 day minimum
+        return max(1, nights)

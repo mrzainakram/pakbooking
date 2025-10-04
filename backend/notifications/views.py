@@ -53,6 +53,7 @@ class NotificationViewSet(viewsets.ModelViewSet):
 
 class BookingStatusViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
+    serializer_class = BookingStatusUpdateSerializer
     
     @action(detail=True, methods=['post'], permission_classes=[IsAdminUser])
     def update_status(self, request, pk=None):

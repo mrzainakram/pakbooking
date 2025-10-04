@@ -1,4 +1,4 @@
-from rest_framework import status, viewsets
+from rest_framework import status, viewsets, generics
 from rest_framework.decorators import api_view, permission_classes, action
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -12,8 +12,9 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-class RegisterView(APIView):
+class RegisterView(generics.GenericAPIView):
     permission_classes = [AllowAny]
+    serializer_class = RegisterSerializer
     
     def post(self, request):
         try:
@@ -51,8 +52,9 @@ class RegisterView(APIView):
                 'detail': 'Registration failed. Please try again.'
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-class LoginView(APIView):
+class LoginView(generics.GenericAPIView):
     permission_classes = [AllowAny]
+    serializer_class = LoginSerializer
     
     def post(self, request):
         try:
@@ -102,8 +104,9 @@ class LoginView(APIView):
                 'detail': 'Login failed. Please try again.'
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-class LogoutView(APIView):
+class LogoutView(generics.GenericAPIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = None  # No serializer needed for logout
     
     def post(self, request):
         try:
@@ -128,8 +131,9 @@ class LogoutView(APIView):
                 'detail': 'Logout successful.'
             }, status=status.HTTP_200_OK)
 
-class UserProfileView(APIView):
+class UserProfileView(generics.GenericAPIView):
     permission_classes = [IsAuthenticated]
+    serializer_class = UserSerializer
     
     def get(self, request):
         serializer = UserSerializer(request.user)
@@ -142,12 +146,14 @@ class UserProfileView(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-def current_user(request):
-    """Get current user info"""
-    serializer = UserSerializer(request.user)
-    return Response(serializer.data)
+class CurrentUserView(generics.GenericAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = UserSerializer
+    
+    def get(self, request):
+        """Get current user info"""
+        serializer = self.get_serializer(request.user)
+        return Response(serializer.data)
 
 class FavoriteViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]

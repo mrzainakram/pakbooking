@@ -171,7 +171,7 @@ class FavoriteSerializer(serializers.ModelSerializer):
         fields = ('id', 'property', 'created_at')
         read_only_fields = ('id', 'created_at')
     
-    def get_property(self, obj):
+    def get_property(self, obj) -> dict:
         from listings.serializers import PropertySerializer
         return PropertySerializer(obj.property).data
 

@@ -11,10 +11,10 @@ urlpatterns = [
     path('login/', views.LoginView.as_view(), name='login'),
     path('logout/', views.LogoutView.as_view(), name='logout'),
     path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('user/', views.current_user, name='current_user'),
+    path('user/', views.CurrentUserView.as_view(), name='current_user'),
     path('profile/', views.UserProfileView.as_view(), name='user_profile'),
     # Alternative endpoint that frontend might be calling
-    path('current-user/', views.current_user, name='current_user_alt'),
+    path('current-user/', views.CurrentUserView.as_view(), name='current_user_alt'),
     # Include router URLs
     path('', include(router.urls)),
 ]
