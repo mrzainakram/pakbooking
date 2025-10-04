@@ -1,3 +1,8 @@
+# Streamlit requirements
+streamlit==1.28.1
+streamlit-authenticator==0.2.3
+
+# Django requirements
 Django==5.0.7
 psycopg[binary]==3.2.10
 djangorestframework==3.15.2
@@ -8,4 +13,7 @@ django-cors-headers==4.4.0
 python-dotenv==1.0.1
 django-filter==24.3
 gunicorn==21.2.0
-whitenoise==6.6.0 
+whitenoise==6.6.0
+
+# Additional dependencies
+requests==2.31.0
