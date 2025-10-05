@@ -1,0 +1,37 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#gradient1)"/>
+  
+  <!-- Mountains -->
+  <polygon points="0,200 100,120 200,160 300,100 400,140 400,300 0,300" fill="url(#gradient2)" opacity="0.8"/>
+  
+  <!-- Sun -->
+  <circle cx="320" cy="80" r="30" fill="#ffd700" opacity="0.9"/>
+  
+  <!-- Buildings -->
+  <rect x="50" y="180" width="30" height="80" fill="#ffffff" opacity="0.3"/>
+  <rect x="90" y="160" width="25" height="100" fill="#ffffff" opacity="0.3"/>
+  <rect x="120" y="170" width="35" height="90" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="200" y="150" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#ffffff">
+    Beautiful Destination
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="100" r="3" fill="#ffffff" opacity="0.6"/>
+  <circle cx="150" cy="120" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="250" cy="90" r="4" fill="#ffffff" opacity="0.6"/>
+  <circle cx="320" cy="130" r="2" fill="#ffffff" opacity="0.6"/>
+</svg> 

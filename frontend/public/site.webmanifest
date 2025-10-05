@@ -1,0 +1,16 @@
+{
+  "name": "PakBooking - Pakistan's Premier Hotel Booking Platform",
+  "short_name": "PakBooking",
+  "description": "Discover and book the best hotels across Pakistan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+} 
