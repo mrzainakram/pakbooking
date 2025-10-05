@@ -291,8 +291,13 @@ export const propertiesAPI = {
     page?: number;
     page_size?: number;
   }) => {
-    const response = await api.get('/listings/', { params });
-    return response.data;
+    try {
+      const response = await api.get('/listings/', { params });
+      return response?.data || [];
+    } catch (error) {
+      console.error('Error fetching properties:', error);
+      return [];
+    }
   },
   
   // Get single property
@@ -675,7 +680,7 @@ export const handleAPIError = (error: any) => {
     const { status, data } = error.response;
     
     if (status === 400) {
-      return data.detail || 'Invalid request data';
+      return data?.detail || 'Invalid request data';
     } else if (status === 401) {
       return 'Authentication required';
     } else if (status === 403) {
@@ -686,7 +691,7 @@ export const handleAPIError = (error: any) => {
       return 'Server error. Please try again later';
     }
     
-    return data.detail || `Error ${status}`;
+    return data?.detail || `Error ${status}`;
   } else if (error.request) {
     // Network error
     return 'Network error. Please check your connection';
